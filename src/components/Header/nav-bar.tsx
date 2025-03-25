@@ -20,7 +20,7 @@ export default function NavBar(props: NavBarProps){
             <ul className="flex gap-12">
                 {links.map(link => (
                     <li key={link.href}>
-                        <Link href={link.href} className={`text-white hover:text-pink-600 ${active === link.label && activeClass}`}>
+                        <Link href={link.href} className={` hover:text-pink-600 ${active === link.label && activeClass}`}>
                             {link.label}
                         </Link>
                     </li>

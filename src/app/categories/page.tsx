@@ -3,7 +3,7 @@ import NavBar from "@/components/Header/nav-bar";
 export default function CategoriesPage(){
     return(
         <>
-            <NavBar/>
+            <NavBar active="categories"/>
 
             <main className="flex justify-center">
                 <div className="bg-slate-900 min-w-2/3 m-6 p-6 rounded">

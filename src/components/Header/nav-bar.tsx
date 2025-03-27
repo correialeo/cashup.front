@@ -6,7 +6,7 @@ interface NavBarProps{
 
 export default function NavBar(props: NavBarProps){
     const {active} = props;
-    const activeClass= "border-b-3 border-pink-600"
+    const activeClass= "border-b-3 border-primary"
 
     const links = [
         {label: "Dashboard", href: "/dashboard"},

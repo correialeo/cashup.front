@@ -4,11 +4,8 @@ import { Category } from "../types";
 import { Button } from "@/components/ui/button";
 import { Plus } from "lucide-react";
 import Link from "next/link";
+import { getCat } from "@/actions/category-actions";
 
-async function getCat(){
-    const response = await fetch("http://localhost:8080/api/category");
-    return await response.json();
-}
 // {id: 1, icon: "Book", name: "Educação"}
 export default async function CategoriesPage(){
     const data: Category[] = await getCat();
